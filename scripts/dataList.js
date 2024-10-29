@@ -16,3 +16,7 @@ let dataArray = [
 dataArray.forEach((costume) => {
     console.log(costume);
 });
+
+let costumesContainer = document.getElementById("costumeContainer");
+
+costumesContainer.innerText = "Hello World";
