@@ -13,10 +13,31 @@ let dataArray = [
     "Clowns"
 ];
 
-dataArray.forEach((costume) => {
-    console.log(costume);
-});
-
 let costumesContainer = document.getElementById("costumeContainer");
 
-costumesContainer.innerText = "Hello World";
+// Create an unordered list tag
+let costumesContainerList = document.createElement("ul");
+
+// costumesContainer.innerText = "Hello World!";
+
+dataArray.forEach((costume) => {
+    // Verify what we are working with
+    console.log(costume);
+
+    // Create the list element
+    let newCostumeEntry = document.createElement("li");
+
+    // Add the value to the HTML element
+    newCostumeEntry.innerText = costume;
+
+    // Add a button to each entry that removes it from the list
+
+    // Add the element to the container
+    costumesContainerList.appendChild(newCostumeEntry);
+});
+
+// Add the container to the HTML page
+costumesContainer.appendChild(costumesContainerList)
+
+
+
