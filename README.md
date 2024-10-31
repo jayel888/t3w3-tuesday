@@ -3,3 +3,7 @@
 - FInding and reading elements
 - Creating and deleting elements
 - Editing elements
+
+# T3W3-Thursday
+- DOM events
+- Forms 
